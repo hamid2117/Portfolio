@@ -4,12 +4,12 @@ const nav = document.querySelector('.navbar');
 const menuNav = document.querySelector('.navbar-menu');
 const navItems =  document.querySelectorAll('navbar-menu-items')
 
-let showMenu = false;// phla false rakhna
+let showMenu = true;// phla false rakhna
 
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
-    if (!showMenu){
+    if (showMenu){
         stulish.classList.add('open');
         nav.classList.add('open');
         menuNav.classList.add('open');
